@@ -31,6 +31,8 @@ class VirtualKeyboardDefaultLayoutKeys extends VirtualKeyboardLayoutKeys {
         return _defaultEnglishLayout;
       case VirtualKeyboardDefaultLayouts.Arabic:
         return _defaultArabicLayout;
+      case VirtualKeyboardDefaultLayouts.Custom:
+        return _defaultCustomLayout;
       default:
     }
     return _defaultEnglishLayout;
@@ -38,6 +40,49 @@ class VirtualKeyboardDefaultLayoutKeys extends VirtualKeyboardLayoutKeys {
 }
 
 /// Keys for Virtual Keyboard's rows.
+const List<List> _defaultCustomLayout = [
+  // Row 2
+  const [
+    'q',
+    'w',
+    'e',
+    'r',
+    't',
+    'y',
+    'u',
+    'i',
+    'o',
+    'p',
+  ],
+  // Row 3
+  const [
+    'a',
+    's',
+    'd',
+    'f',
+    'g',
+    'h',
+    'j',
+    'k',
+    'l',
+  ],
+  // Row 4
+  const [
+    VirtualKeyboardKeyAction.Shift,
+    'z',
+    'x',
+    'c',
+    'v',
+    'b',
+    'n',
+    'm',
+    VirtualKeyboardKeyAction.Backspace
+  ],
+  // Row 5
+  const [
+    VirtualKeyboardKeyAction.Space,
+  ]
+];
 const List<List> _defaultEnglishLayout = [
   // Row 1
   const [

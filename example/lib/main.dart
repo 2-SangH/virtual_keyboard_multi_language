@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               text,
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             Text(
               _controllerText.text,
@@ -86,8 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   textController: _controllerText,
                   //customLayoutKeys: _customLayoutKeys,
                   defaultLayouts: [
-                    VirtualKeyboardDefaultLayouts.Arabic,
-                    VirtualKeyboardDefaultLayouts.English
+                    VirtualKeyboardDefaultLayouts.Custom
                   ],
                   //reverseLayout :true,
                   type: isNumericMode
